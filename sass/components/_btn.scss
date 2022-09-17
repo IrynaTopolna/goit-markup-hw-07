@@ -1,0 +1,61 @@
+.btn {
+  color: var(--main-text-color);
+  background-color: var(--accent-white);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+}
+
+.btn.studio {
+  color: var(--accent-white);
+  background-color: var(--accent-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 216px;
+  transition: color var(--transition-dur-func),
+    background-color var(--transition-dur-func);
+}
+
+.btn.studio:hover,
+.btn.studio:focus {
+  color: var(--accent-white);
+  background-color: var(--btn-active);
+}
+
+.btn.portfolio {
+  color: var(--main-text-color);
+  background-color: var(--bgc-team-btn-portfolio);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  padding: 6px 22px;
+  min-width: 73px;
+  transition: color var(--transition-dur-func),
+    background-color var(--transition-dur-func),
+    box-shadow var(--transition-dur-func);
+}
+
+.btn.portfolio:hover,
+.btn.portfolio:focus {
+  color: var(--accent-white);
+  background-color: var(--accent-blue);
+  box-shadow: 0px 4px 4px var(--box-shadow);
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.flex-button-item {
+  margin-right: 8px;
+}
+
+.flex-button-item:last-child {
+  margin-right: 0;
+}
