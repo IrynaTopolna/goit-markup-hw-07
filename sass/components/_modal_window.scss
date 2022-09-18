@@ -19,7 +19,6 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -27,14 +26,14 @@
   background-color: transparent;
   cursor: pointer;
   fill: currentColor;
-
-  &:hover .close-icon,
-  &:focus .close-icon {
-    color: var(--accent-blue);
-  }
 }
 
 .close-icon {
   color: var(--text-color-logo-header);
   transition: color var(--transition-dur-func);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    color: var(--accent-blue);
+  }
 }
