@@ -1,8 +1,7 @@
 .section {
   padding-bottom: 94px;
-}
 
-.section.top {
-  padding-top: 94px;
+  &.top {
+    padding-top: 94px;
+  }
 }
-

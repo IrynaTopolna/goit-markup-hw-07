@@ -15,21 +15,25 @@
   color: var(--social-link-color);
   transition: color var(--transition-dur-func),
     background-color var(--transition-dur-func);
-}
 
-.social-list-link:hover,
-.social-list-link:focus,
-.join .social-list-link:hover,
-.join .social-list-link:focus {
-  color: var(--accent-white);
-  background-color: var(--accent-blue);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-white);
+    background-color: var(--accent-blue);
+  }
 
-.join .social-list-link {
-  color: var(--accent-white);
-  background-color: var(--social-link-bgc-footer);
-  transition: color var(--transition-dur-func),
-    background-color var(--transition-dur-func);
+  .join & {
+    color: var(--accent-white);
+    background-color: var(--social-link-bgc-footer);
+    transition: color var(--transition-dur-func),
+      background-color var(--transition-dur-func);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-white);
+      background-color: var(--accent-blue);
+    }
+  }
 }
 
 .social-list-icon {

@@ -27,14 +27,14 @@
   background-color: transparent;
   cursor: pointer;
   fill: currentColor;
+
+  &:hover .close-icon,
+  &:focus .close-icon {
+    color: var(--accent-blue);
+  }
 }
 
 .close-icon {
   color: var(--text-color-logo-header);
   transition: color var(--transition-dur-func);
-}
-
-.modal-close-btn:hover .close-icon,
-.modal-close-btn:focus .close-icon {
-  color: var(--accent-blue);
 }

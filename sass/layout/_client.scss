@@ -15,12 +15,12 @@
   border-radius: 4px;
   transition: color var(--transition-dur-func),
     border var(--transition-dur-func);
-}
 
-.client-link:hover,
-.client-link:focus {
-  color: var(--accent-blue);
-  border: 1px solid var(--accent-blue);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+  }
 }
 
 .client-icon {

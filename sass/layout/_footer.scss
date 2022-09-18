@@ -14,11 +14,11 @@
   line-height: 1.71;
   font-style: normal;
   transition: color var(--transition-dur-func);
-}
 
-.adress:hover,
-.adress:focus {
-  color: var(--accent-blue);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue);
+  }
 }
 
 .contacts {
@@ -27,11 +27,11 @@
   line-height: 1.71;
   font-style: normal;
   transition: color var(--transition-dur-func);
-}
 
-.contacts:hover,
-.contacts:focus {
-  color: var(--accent-blue);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue);
+  }
 }
 
 .join {
@@ -81,11 +81,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--bgc-footer);
-}
-.mail-input-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--text-color-contacts);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-color-contacts);
+  }
 }
 
 .mail-input-btn {

@@ -1,38 +1,14 @@
 .examples-link {
   transition: box-shadow var(--transition-dur-func);
-}
 
-.examples-link:hover,
-.examples-link:focus {
-  box-shadow: 0px 4px 4px var(--box-shadow);
-}
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px var(--box-shadow);
 
-.examples-title {
-  color: var(--main-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.examples-paragraph {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-
-
-.elements-border {
-  border: 1px solid var(--portfolio-element-border);
-  border-top: 0;
-  padding: 20px 24px;
-}
-
-.examples-wrapper {
-  position: relative;
-  overflow: hidden;
+    .examples-overlay {
+      transform: translateY(0%);
+    }
+  }
 }
 
 .examples-overlay {
@@ -52,7 +28,28 @@
   transition: transform 250ms linear;
 }
 
-.examples-link:hover .examples-overlay,
-.examples-link:focus .examples-overlay {
-  transform: translateY(0%);
+.examples-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.examples-paragraph {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.elements-border {
+  border: 1px solid var(--portfolio-element-border);
+  border-top: 0;
+  padding: 20px 24px;
+}
+
+.examples-wrapper {
+  position: relative;
+  overflow: hidden;
 }
