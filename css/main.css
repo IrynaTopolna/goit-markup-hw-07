@@ -1,4 +1,6 @@
 :root {
+  --main-font: roboto, sans-serif;
+  --secondary-font: raleway, sans-serif;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-blue: #2196f3;
@@ -17,7 +19,7 @@
   --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link, .modal-form-checkbox, .modal-close-btn, .social-list-link {
+.client__link, .modal-form-checkbox, .modal-close-btn, .social-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +41,7 @@
 body {
   color: var(--main-text-color);
   background-color: var(--accent-white);
-  font-family: roboto, sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.03em;
 }
 
@@ -85,7 +87,7 @@ ul {
 .section {
   padding-bottom: 94px;
 }
-.section.top {
+.section.section_top_padding {
   padding-top: 94px;
 }
 
@@ -99,17 +101,17 @@ ul {
 
 .logo {
   color: var(--accent-blue);
-  font-family: raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo-top {
+.logo__top {
   margin-right: 93px;
 }
 
-.logo-header {
+.logo__header_dark {
   color: var(--text-color-logo-header);
 }
 
@@ -138,7 +140,7 @@ ul {
   border: none;
   display: inline-block;
 }
-.btn.studio {
+.btn.hero__btn {
   color: var(--accent-white);
   background-color: var(--accent-blue);
   font-size: 16px;
@@ -149,7 +151,7 @@ ul {
   min-width: 216px;
   transition: color var(--transition-dur-func), background-color var(--transition-dur-func);
 }
-.btn.studio:hover, .btn.studio:focus {
+.btn.hero__btn:hover, .btn.hero__btn:focus {
   color: var(--accent-white);
   background-color: var(--btn-active);
 }
@@ -410,7 +412,8 @@ ul {
   border-bottom: 1px solid var(--header-border);
 }
 
-.flex {
+.flex,
+.page-navigation {
   display: flex;
   align-items: center;
 }
@@ -418,7 +421,7 @@ ul {
 .site-nav {
   display: flex;
 }
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .site-nav .link {
@@ -436,10 +439,10 @@ ul {
 .site-nav .link:hover, .site-nav .link:focus {
   color: var(--accent-blue);
 }
-.site-nav .current {
+.site-nav .site-nav_current {
   color: var(--accent-blue);
 }
-.site-nav .current::after {
+.site-nav .site-nav_current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -456,7 +459,7 @@ ul {
   margin-left: auto;
   align-items: center;
 }
-.auth-nav .item.item:not(:last-child) {
+.auth-nav .site-nav__item.site-nav__item:not(:last-child) {
   margin-right: 30px;
 }
 .auth-nav .link {
@@ -476,8 +479,8 @@ ul {
   color: var(--accent-blue);
 }
 
-.mail,
-.phone {
+.site-nav__mail,
+.site-nav__phone {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -488,7 +491,7 @@ ul {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   color: var(--accent-white);
   font-weight: 900;
   font-size: 44px;
@@ -498,7 +501,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -514,15 +517,15 @@ ul {
   display: flex;
 }
 
-.advantage-element {
+.advantage__element {
   width: 270px;
   margin-right: 30px;
 }
-.advantage-element:last-child {
+.advantage__element:last-child {
   margin-right: 0;
 }
 
-.advantage-title {
+.advantage__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
@@ -530,13 +533,13 @@ ul {
   margin-bottom: 10px;
 }
 
-.advantage-paragraph {
+.advantage__paragraph {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.advantage-thumb {
+.advantage__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,7 +633,7 @@ ul {
   column-gap: 30px;
 }
 
-.client-link {
+.client__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-link-color);
@@ -638,12 +641,12 @@ ul {
   border-radius: 4px;
   transition: color var(--transition-dur-func), border var(--transition-dur-func);
 }
-.client-link:hover, .client-link:focus {
+.client__link:hover, .client__link:focus {
   color: var(--accent-blue);
   border: 1px solid var(--accent-blue);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 

@@ -1,16 +1,16 @@
 .logo {
   color: var(--accent-blue);
-  font-family: raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo-top {
+.logo__top {
   margin-right: 93px;
 }
 
-.logo-header {
+.logo__header_dark {
   color: var(--text-color-logo-header);
 }
 

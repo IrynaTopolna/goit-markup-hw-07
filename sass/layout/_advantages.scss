@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.advantage-element {
+.advantage__element {
   width: 270px;
   margin-right: 30px;
 
@@ -11,19 +11,19 @@
   }
 }
 
-.advantage-title {
+.advantage__title {
   @include font($fw: 700);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.advantage-paragraph {
+.advantage__paragraph {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.advantage-thumb {
+.advantage__thumb {
   display: flex;
   align-items: center;
   justify-content: center;

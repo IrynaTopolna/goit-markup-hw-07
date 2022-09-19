@@ -21,24 +21,26 @@
   <body>
     <header class="page-header">
       <div class="container flex">
-        <nav class="flex">
-          <a href="./index.html" class="logo link logo-top"
-            >Web<span class="logo-header">Studio</span></a
+        <nav class="page-navigation">
+          <a href="./index.html" class="logo link logo__top"
+            >Web<span class="logo__header_dark">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="link">Студія</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav_current">Портфоліо</a>
+            </li>
+            <li class="site-nav__item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="auth-nav list">
-          <li class="item">
+          <li class="site-nav__item">
             <a href="mailto:info@devstudio.com" class="link">
               <svg
-                class="mail"
+                class="site-nav__mail"
                 lang="en"
                 aria-label="envelope icon"
                 width="16px"
@@ -49,10 +51,10 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="site-nav__item">
             <a href="tel:+380961111111" class="link">
               <svg
-                class="phone"
+                class="site-nav__phone"
                 lang="en"
                 aria-label="smartphone icon"
                 width="10px"
@@ -68,7 +70,7 @@
     </header>
 
     <main>
-      <section class="section top">
+      <section class="section section_top_padding">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list flex-button">

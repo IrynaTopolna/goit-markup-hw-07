@@ -6,7 +6,7 @@
   border: none;
   display: inline-block;
 
-  &.studio {
+  &.hero__btn {
     color: var(--accent-white);
     background-color: var(--accent-blue);
     @include font(16px, 700, 30px);
