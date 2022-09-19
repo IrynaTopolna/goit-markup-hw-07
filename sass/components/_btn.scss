@@ -9,9 +9,7 @@
   &.studio {
     color: var(--accent-white);
     background-color: var(--accent-blue);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 700, 30px);
     letter-spacing: 0.06em;
     padding: 10px 32px;
     min-width: 216px;
@@ -28,9 +26,7 @@
   &.portfolio {
     color: var(--main-text-color);
     background-color: var(--bgc-team-btn-portfolio);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    @include font(16px, 500, 26px);
     padding: 6px 22px;
     min-width: 73px;
     transition: color var(--transition-dur-func),

@@ -86,10 +86,8 @@
 }
 
 .modal-form-checkbox {
-  display: flex;
-  align-items: center;
+  @extend %align;
   margin-bottom: 30px;
-  justify-content: center;
 }
 
 .modal-form-own-checkbox {
